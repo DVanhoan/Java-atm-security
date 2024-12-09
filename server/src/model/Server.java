@@ -2,6 +2,7 @@ package model;
 
 import configs.Configs;
 import service.UserService;
+import utils.RSAHash;
 import utils.Util;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -139,7 +140,7 @@ public class Server{
                 String username = user.getUsername();
                 String password = decrypt(user.getPassword());
                 int cost = user.getCost();
-                System.out.println("Load user: " + username + " with password: " + password + " and cost: " + cost);
+                System.out.println("Load user: " + username + " and cost: " + cost);
                 try {
                     clients.add(new Handle(username, password, cost, false, lock));
                 } catch (Exception ex) {
@@ -152,8 +153,6 @@ public class Server{
             e.printStackTrace();
         }
     }
-
-
 
 
 

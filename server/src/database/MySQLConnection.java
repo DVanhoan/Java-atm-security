@@ -11,7 +11,7 @@ public class MySQLConnection {
     private static final int PORT = 3306;
     private static final String DB_NAME = "atm";
     private static final String USER = "root";
-    private static final String PASSWORD = "duongvanhoan22082005";
+    private static final String PASSWORD = "";
 
     private static Connection connection;
 

@@ -51,4 +51,13 @@ public class DashBord extends JPanel {
 
         return new ChartPanel(chart);
     }
+
+
+    public static void main(String[] args) throws SQLException {
+        JFrame frame = new JFrame("DashBord");
+        frame.setContentPane(new DashBord());
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }

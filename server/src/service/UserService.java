@@ -4,7 +4,6 @@ import database.MySQLConnection;
 import model.Note;
 import model.User;
 
-import java.awt.geom.NoninvertibleTransformException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -229,9 +228,8 @@ public class UserService {
 
 
     public static void main(String[] args) throws SQLException {
-        Note<User> user = checkExitUserByUserName("hoan");
-        System.out.println(user);
-
+        User user = new User(1, "nhan", "123", 10000);
+        System.out.println(UserService.updateUserCost(user));
     }
 
 

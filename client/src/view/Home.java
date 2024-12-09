@@ -39,7 +39,7 @@ public class Home extends JFrame {
         panelHeader = new JPanel();
         panelHeader.setLayout(new GridLayout(2, 1));
         panelHeader.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        lblHello = new JLabel("Hello, welcome to Huy ATM", JLabel.CENTER);
+        lblHello = new JLabel("Hello, welcome to Hoan ATM", JLabel.CENTER);
 
         panelInfo = new JPanel();
         panelInfo.setLayout(new GridLayout(2, 1));
